@@ -1,0 +1,28 @@
+﻿<Window x:Class="InsPres1.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InsPres1"
+        xmlns:resx="clr-namespace:InsPres1.Properties"
+        mc:Ignorable="d"
+        Title="{x:Static resx:Resources.EditWindowTitle}" Height="262.5" Width="515.333">
+    <Grid Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="127"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="name"    TextWrapping="Wrap" />
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="filePath" />
+        <Label Grid.Row="0" Grid.Column="0" x:Name="label" Content="{x:Static resx:Resources.NameTextBlockText}" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Label Grid.Row="1" Grid.Column="0" x:Name="label_Copy" Content="{x:Static resx:Resources.LocationTextBlockText}" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Button Grid.Row="2" Grid.Column="2" x:Name="button" Content="{x:Static resx:Resources.OkButtonText}" Click="button_Click" Width="60" Height="{Binding ElementName=button1, Path=ActualHeight}" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Normal" Margin="0,0,0,5"/>
+        <Button  Grid.Row="1" Grid.Column="2" x:Name="button1" Content="{x:Static resx:Resources.BrowseButtonText}" Click="button1_Click" Width="60" Height="26" Margin="22.166,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Normal"/>
+    </Grid>
+</Window>

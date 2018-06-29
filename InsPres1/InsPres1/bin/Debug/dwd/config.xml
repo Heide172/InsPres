@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ArrayOfDataXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataXML>
+    <FileName>gvdfr</FileName>
+    <FilePath>E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\dwd\Resources\gvdfr.swf</FilePath>
+    <FilePreview>E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\dwd\Previews\gvdfr.swf.jpg</FilePreview>
+    <FileType>Html</FileType>
+  </dataXML>
+  <dataXML>
+    <FileName>gfg</FileName>
+    <FilePath>E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\dwd\Resources\gfg.wmv</FilePath>
+    <FilePreview>E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\dwd\Previews\gfg.wmv.jpg</FilePreview>
+    <FileType>Video</FileType>
+  </dataXML>
+</ArrayOfDataXML>

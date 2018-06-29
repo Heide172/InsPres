@@ -1,0 +1,18 @@
+﻿<Controls:MetroWindow x:Class="InsPres1.ImageViewer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:InsPres1"
+        mc:Ignorable="d"
+        ShowTitleBar="True"
+        Name="ImageViewerWindow"
+        WindowState="Maximized"
+                     
+        Title="FlashName" Height="550" Width="725" Background="Black">
+    <Grid>
+        <Image Name="Image"/>
+    </Grid>
+</Controls:MetroWindow>

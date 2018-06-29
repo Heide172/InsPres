@@ -1,0 +1,106 @@
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\bin\Debug\InsPres1.exe.config
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\bin\Debug\InsPres1.exe
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\bin\Debug\InsPres1.pdb
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\InsPres1.csprojResolveAssemblyReference.cache
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\MainWindow.g.cs
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\App.g.cs
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\InsPres1_MarkupCompile.cache
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\InsPres1_MarkupCompile.lref
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\MainWindow.baml
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\InsPres1.g.resources
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\InsPres1.Properties.Resources.resources
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\InsPres1.csproj.GenerateResource.Cache
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\InsPres1.exe
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\InsPres1.pdb
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\bin\Debug\ControlzEx.dll
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\bin\Debug\MahApps.Metro.dll
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\bin\Debug\System.Windows.Interactivity.dll
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\bin\Debug\ControlzEx.pdb
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\bin\Debug\MahApps.Metro.pdb
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\bin\Debug\MahApps.Metro.xml
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\App.baml
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\Resources\Icons.baml
+c:\users\temp.dep8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\TEMP.DEP8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\TEMP.DEP8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\TEMP.DEP8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\TEMP.DEP8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\Icons.baml
+C:\Users\TEMP.DEP8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\itemBox.g.cs
+C:\Users\TEMP.DEP8021\documents\visual studio 2015\Projects\InsPres1\InsPres1\obj\Debug\itemBox.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\InsPres1.exe.config
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\InsPres1.exe
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\InsPres1.pdb
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\InsPres1.exe
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\InsPres1.pdb
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\ControlzEx.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\MahApps.Metro.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\MahApps.Metro.IconPacks.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\System.Windows.Interactivity.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\ControlzEx.pdb
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\MahApps.Metro.pdb
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\MahApps.Metro.xml
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\MahApps.Metro.IconPacks.pdb
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\MahApps.Metro.IconPacks.xml
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\InsPres1.csprojResolveAssemblyReference.cache
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\Icons.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\Resources\Icons.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\Resources\IconsNonShared.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\itemBox.g.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\MainWindow.g.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\App.g.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\InsPres1_MarkupCompile.cache
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\InsPres1_MarkupCompile.lref
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\App.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\itemBox.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\MainWindow.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\InsPres1.g.resources
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\InsPres1.Properties.Resources.resources
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\InsPres1.csproj.GenerateResource.Cache
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\AsfMojo.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\JockerSoft.Media.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\Interop.DexterLib.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\stdole.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\JockerSoft.Media.pdb
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\VideoPlayer.g.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\VideoPlayer.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\Interop.ShockwaveFlashObjects.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\InsPres1.csproj.ResolveComReference.cache
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\FlashPlayer.g.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\Interop.ShockwaveFlashObjects.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\FlashPlayer.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\HTMLViewer.g.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\HTMLViewer.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\HtmlRenderer.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\HtmlRenderer.WPF.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\HtmlRendererCore.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\HtmlRenderer.pdb
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\HtmlRenderer.WPF.pdb
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\ImageViewer.g.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\ImageViewer.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\EditWindow.g.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\EditWindow.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\Properties\Resources.resx
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\Properties\Resources.ru-RU.resx
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\Properties\Resources.en.resx
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\Properties\Resources.en.Designer.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\Properties\Resources.Designer.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\ru-RU\InsPres1.resources.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\en\InsPres1.resources.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\CreateNewWindow.g.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\CreateNewWindow.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\InsPres1.Properties.Resources.ru-RU.resources
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\InsPres1.Properties.Resources.en.resources
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\ru-RU\InsPres1.resources.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\en\InsPres1.resources.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\Properties\Resources.ru-RU.Designer.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\toggleButton.g.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\toggleButton.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\GongSolutions.Wpf.DragDrop.dll
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\GongSolutions.Wpf.DragDrop.pdb
+E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\GongSolutions.Wpf.DragDrop.xml
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\ExitWindow.g.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\ExitWindow.baml
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\itemPreview.g.cs
+E:\A_V_Tonyan\InsPres1\InsPres1\obj\Debug\itemPreview.baml

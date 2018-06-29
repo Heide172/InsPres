@@ -1,0 +1,5 @@
+E:\A_V_Tonyan\InsPres1\Новая папка\bin\Release\JockerSoft.Media.dll
+E:\A_V_Tonyan\InsPres1\Новая папка\bin\Release\Interop.DexterLib.dll
+E:\A_V_Tonyan\InsPres1\Новая папка\obj\Release\Interop.DexterLib.dll
+E:\A_V_Tonyan\InsPres1\Новая папка\obj\Release\FrameGrabber.csproj.ResolveComReference.cache
+E:\A_V_Tonyan\InsPres1\Новая папка\obj\Release\JockerSoft.Media.dll

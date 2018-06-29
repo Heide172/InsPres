@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfDataXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <dataXML>
+    <FileName>Видео</FileName>
+    <FilePath>E:\A_V_Tonyan\Wildlife.wmv</FilePath>
+    <FilePreview>Preview\ВидеоPreview.jpg</FilePreview>
+    <FileType>Video</FileType>
+  </dataXML>
+  <dataXML>
+    <FileName>Изображение</FileName>
+    <FilePath>C:\Users\Public\Pictures\Sample Pictures\Penguins.jpg</FilePath>
+    <FilePreview>C:\Users\Public\Pictures\Sample Pictures\Penguins.jpg</FilePreview>
+    <FileType>Image</FileType>
+  </dataXML>
+  <dataXML>
+    <FileName>Анимация</FileName>
+    <FilePath>E:\A_V_Tonyan\SWF_in_CSharp\SWF_in_CSharp\SWF_in_CSharp\bin\Debug\bluebirdie00.swf</FilePath>
+    <FilePreview>C:\Users\Public\Pictures\Sample Pictures\Tulips.jpg</FilePreview>
+    <FileType>Flash</FileType>
+  </dataXML>
+  <dataXML>
+    <FileName>HTML</FileName>
+    <FilePath>E:\A_V_Tonyan\InsPres1\InsPres1\bin\Debug\Messages.html</FilePath>
+    <FilePreview>C:\Users\Public\Pictures\Sample Pictures\Desert.jpg</FilePreview>
+    <FileType>Html</FileType>
+  </dataXML>
+</ArrayOfDataXML>

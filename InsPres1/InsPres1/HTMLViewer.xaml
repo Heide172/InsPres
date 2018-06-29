@@ -1,0 +1,28 @@
+﻿<Controls:MetroWindow x:Class="InsPres1.HTMLViewer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:InsPres1"
+        xmlns:wpf="clr-namespace:TheArtOfDev.HtmlRenderer.WPF;assembly=HtmlRenderer.WPF"
+        mc:Ignorable="d"
+        ShowTitleBar="True"
+        Name="HTMLViewerWindow"
+        WindowState="Maximized"
+                     
+        Title="FlashName" Height="550" Width="725" Background="Black">
+    <Window.Resources>
+        <Image x:Key="Refresh" Source="Resources/refresh.png" VerticalAlignment="Center" HorizontalAlignment="Center" Height="15" Width="15"/>
+        <Image x:Key="Forward_gr" Source="Resources/forward_gr.png" VerticalAlignment="Center" HorizontalAlignment="Center" Height="15" Width="15"/>
+        <Image x:Key="Forward" Source="Resources/forward.png" VerticalAlignment="Center" HorizontalAlignment="Center" Height="15" Width="15"/>
+        <Image x:Key="Back_gr" Source="Resources/back_gr.png" VerticalAlignment="Center" HorizontalAlignment="Center" Height="15" Width="15"/>
+        <Image x:Key="Back" Source="Resources/back.png" VerticalAlignment="Center" HorizontalAlignment="Center" Height="15" Width="15"/>
+    </Window.Resources>
+    <Grid>
+        
+        <WebBrowser Name="WebBrowser" Grid.Row="1" Grid.Column="1" />
+        
+    </Grid>
+</Controls:MetroWindow>

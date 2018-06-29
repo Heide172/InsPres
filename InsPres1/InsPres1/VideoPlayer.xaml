@@ -1,0 +1,81 @@
+﻿<Controls:MetroWindow x:Class="InsPres1.VideoPlayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:InsPres1"
+        mc:Ignorable="d"
+        ShowTitleBar="True"
+        Name="VideoPlayerWindow"
+        WindowState="Maximized"
+                     
+        Title="VideoName" Height="550" Width="725" Background="Black" >
+    <Window.Resources>
+        <Image x:Key="Play" Source="Resources/play.png" VerticalAlignment="Center" HorizontalAlignment="Center" Height="35" Width="35"/>
+        <Image x:Key="Pause" Source="Resources/pause.png" VerticalAlignment="Center" HorizontalAlignment="Center" Height="35" Width="35"/>
+        <Image x:Key="RepeatG" Source="Resources/repeat_grey.png" VerticalAlignment="Center" HorizontalAlignment="Center" Height="20" Width="20"/>
+        <Image x:Key="RepeatB" Source="Resources/repeat_black.png" VerticalAlignment="Center" HorizontalAlignment="Center" Height="20" Width="20"/>
+        <Image x:Key="Stop" Source="Resources/stop.png" VerticalAlignment="Center" HorizontalAlignment="Center" Height="25" Width="25"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <MediaElement   
+            Grid.Column="0" 
+            Grid.Row="0"
+            Grid.RowSpan="2" 
+            Grid.ColumnSpan="3" 
+            x:Name="mediaElement" 
+            UnloadedBehavior="Manual"
+            LoadedBehavior="Manual"
+            MediaOpened="mediaElement_MediaOpened"
+            MediaEnded="mediaElement_MediaEnded"
+            MouseLeftButtonUp="mediaElement_MouseLeftButtonUp"
+            MouseLeave ="Grid_MouseLeave"
+            MouseEnter="Grid_MouseEnter"
+            />
+        <Grid Name="cntlGrid" Grid.Column="1" Grid.Row="2" Margin="-2.31,0,2.309,0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.8*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+            <ToggleButton 
+                Name="Play_Pause_button" 
+                Grid.Column="0" 
+                Style="{DynamicResource SquareButtonStyle}" 
+                Click="ToggleButton_Click" BorderThickness="1" 
+                Content="{StaticResource Play}" 
+                Grid.Row="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center" 
+                Width="70" UseLayoutRounding="False"
+                
+                />
+            <Button Name="Stop_button" Grid.Column="1" Style="{DynamicResource SquareButtonStyle}" Click="Button_Click" BorderThickness="1"   Content="{StaticResource Stop}" Grid.Row="1" Margin="10,12.053,10,5.052" />
+            <ToggleButton Name="Repeat_button" Grid.Column="2" Grid.Row="1" Style="{DynamicResource SquareButtonStyle}" Click="Repeat_button_Click" Content= "{StaticResource RepeatG}" Margin="10,12.053,10,5.052" />
+            <Slider Name ="Position_slider" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource MetroSlider}" ValueChanged="Position_slider_ValueChanged" GotMouseCapture="Position_slider_GotMouseCapture" LostMouseCapture="Position_slider_LostMouseCapture" Margin="10,7.68,0,9.998" d:LayoutOverrides="Height" />
+            <Slider Name="Volume_slider" Grid.Column="3" ValueChanged="Volume_slider_ValueChanged" Value="{Binding ElementName=mediaElement, Path=Volume, Mode=TwoWay}" RenderTransformOrigin="0.472,1.826" Margin="0,16.105,10,10" Grid.Row="1" d:LayoutOverrides="Height" HorizontalAlignment="Right" Width="85" />
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="k" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="#FFFFFDFD"/>
+            <TextBlock x:Name="textBlock1" Grid.Column="4" Grid.Row="0"  TextWrapping="Wrap" Text="TextBlock" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+            <TextBlock x:Name="textBlock2" Grid.Column="4" Grid.Row="1" Margin="0,0.543,0.503,0"  TextWrapping="Wrap" Foreground="White" RenderTransformOrigin="-0.285,0.176" FontSize="10.667"><Run Text="     Volume"/><LineBreak/><Run Text="0 100 %"/><LineBreak/><Run/></TextBlock>
+        </Grid>
+    </Grid>
+
+</Controls:MetroWindow>

@@ -1,0 +1,11 @@
+E:\A_V_Tonyan\InsPres1\Новая папка\Test\bin\Debug\Test.exe
+E:\A_V_Tonyan\InsPres1\Новая папка\Test\bin\Debug\Test.pdb
+E:\A_V_Tonyan\InsPres1\Новая папка\Test\bin\Debug\JockerSoft.Media.dll
+E:\A_V_Tonyan\InsPres1\Новая папка\Test\bin\Debug\Interop.DexterLib.dll
+E:\A_V_Tonyan\InsPres1\Новая папка\Test\bin\Debug\stdole.dll
+E:\A_V_Tonyan\InsPres1\Новая папка\Test\bin\Debug\JockerSoft.Media.pdb
+E:\A_V_Tonyan\InsPres1\Новая папка\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+E:\A_V_Tonyan\InsPres1\Новая папка\Test\obj\Debug\JockerSoft.Media.Form1.resources
+E:\A_V_Tonyan\InsPres1\Новая папка\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+E:\A_V_Tonyan\InsPres1\Новая папка\Test\obj\Debug\Test.exe
+E:\A_V_Tonyan\InsPres1\Новая папка\Test\obj\Debug\Test.pdb

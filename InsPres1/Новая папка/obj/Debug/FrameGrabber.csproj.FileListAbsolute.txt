@@ -1,0 +1,8 @@
+E:\A_V_Tonyan\InsPres1\Новая папка\bin\Debug\JockerSoft.Media.dll
+E:\A_V_Tonyan\InsPres1\Новая папка\bin\Debug\JockerSoft.Media.pdb
+E:\A_V_Tonyan\InsPres1\Новая папка\bin\Debug\Interop.DexterLib.dll
+E:\A_V_Tonyan\InsPres1\Новая папка\obj\Debug\Interop.DexterLib.dll
+E:\A_V_Tonyan\InsPres1\Новая папка\obj\Debug\FrameGrabber.csproj.ResolveComReference.cache
+E:\A_V_Tonyan\InsPres1\Новая папка\obj\Debug\JockerSoft.Media.dll
+E:\A_V_Tonyan\InsPres1\Новая папка\obj\Debug\JockerSoft.Media.pdb
+E:\A_V_Tonyan\InsPres1\Новая папка\obj\Debug\FrameGrabber.csprojResolveAssemblyReference.cache
