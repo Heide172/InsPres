@@ -72,10 +72,10 @@ namespace InsPres1
                         if (!File.Exists(basePath + "\\Resources\\" + System.IO.Path.GetFileName(filePath.Text)))
                         {
                             File.Copy(filePath.Text, basePath + "\\Resources\\" + System.IO.Path.GetFileName(filePath.Text));
-                            data.FilePath = basePath + "\\Resources\\" + System.IO.Path.GetFileName(filePath.Text);
+                            data.FilePath =  "\\Resources\\" + System.IO.Path.GetFileName(filePath.Text);
                         }
                         else
-                            data.FilePath = basePath + "\\Resources\\" + System.IO.Path.GetFileName(filePath.Text);
+                            data.FilePath =  "\\Resources\\" + System.IO.Path.GetFileName(filePath.Text);
                     }
                     else
                         data.FilePath = filePath.Text;
@@ -168,7 +168,7 @@ namespace InsPres1
         {
             try
             {
-                string prwPath = basePath + "\\Previews" + "\\" + System.IO.Path.GetFileName(filePath) + ".jpg";
+                string prwPath = "\\Previews" + "\\" + System.IO.Path.GetFileName(filePath) + ".jpg";
 
                 Rect bounds = VisualTreeHelper.GetDescendantBounds(itemPreview1);
 
@@ -183,7 +183,7 @@ namespace InsPres1
                                            new System.Drawing.Size((int)bounds.Width,
                                                                         (int)bounds.Height));
 
-                image.Save(prwPath);
+                image.Save(basePath +  prwPath);
                 return prwPath;
             }
             catch (Exception ex)

@@ -95,7 +95,7 @@ namespace InsPres1
                             e.Cancel = true;
                             break;
                         case 1:
-                            Preset.SaveAs(CurrentPreset);
+                            Preset.SaveAs(CurrentPreset, CurrentPresetPath);
                             break;
                         case 2:
 
@@ -103,7 +103,7 @@ namespace InsPres1
                     }
                 }
                 else
-                    Preset.Save(CurrentPreset, CurrentPresetPath);
+                    Preset.Save(CurrentPreset, CurrentPresetPath, CurrentPresetPath);
 
 
                 toggleButton1.Close();
@@ -144,22 +144,23 @@ namespace InsPres1
         {
             try
             {
+                string fullFilePath = CurrentPresetPath + "\\" + path;
                 switch (fileType)
                 {
                     case dataXML._FileType.Video:
-                        VideoPlayer vp = new VideoPlayer(fileName, path);
+                        VideoPlayer vp = new VideoPlayer(fileName, fullFilePath);
                         vp.Show();
                         break;
                     case dataXML._FileType.Flash:
-                        FlashPlayer fp = new FlashPlayer(fileName, path);
+                        FlashPlayer fp = new FlashPlayer(fileName, fullFilePath);
                         fp.Show();
                         break;
                     case dataXML._FileType.Html:
-                        HTMLViewer hv = new HTMLViewer(fileName, path);
+                        HTMLViewer hv = new HTMLViewer(fileName, fullFilePath);
                         hv.Show();
                         break;
                     case dataXML._FileType.Image:
-                        ImageViewer iv = new ImageViewer(fileName, path);
+                        ImageViewer iv = new ImageViewer(fileName, fullFilePath);
                         iv.Show();
                         break;
                     case dataXML._FileType.Edit:
@@ -224,6 +225,9 @@ namespace InsPres1
                         Panel1.Items.Clear();
                         foreach (dataXML data1 in CurrentPreset)
                         {
+                            dataXML viewData = data1;
+                            viewData.FilePath = CurrentPresetPath + "\\" + viewData.FilePath;
+                            viewData.FilePreview = CurrentPresetPath + "\\" + viewData.FilePreview;
                             Panel1.Items.Add(CreateNewItemBox(data1));
                         }
                         object o = new object();
@@ -251,7 +255,14 @@ namespace InsPres1
             Panel1.Items.Clear();
             foreach (dataXML data1 in CurrentPreset)
             {
-                Panel1.Items.Add(CreateNewItemBox(data1));
+                dataXML viewData = new dataXML();
+                viewData.FileName = data1.FileName;
+                viewData.FilePath = data1.FilePath;
+                viewData.FilePreview = data1.FilePreview;
+                viewData.FileType = data1.FileType;
+                viewData.FilePath = CurrentPresetPath + "\\" + viewData.FilePath;
+                viewData.FilePreview = CurrentPresetPath + "\\" + viewData.FilePreview;
+                Panel1.Items.Add(CreateNewItemBox(viewData));
             }
             object o = new object();
             RoutedEventArgs e = new RoutedEventArgs();
@@ -347,7 +358,7 @@ namespace InsPres1
         {
             try
             {
-                Preset.Save(CurrentPreset, CurrentPresetPath);
+                Preset.Save(CurrentPreset, CurrentPresetPath, CurrentPresetPath);
             }
             catch (Exception ex)
             {
@@ -360,7 +371,7 @@ namespace InsPres1
         {
             try
             {
-                Preset.SaveAs(CurrentPreset);
+                Preset.SaveAs(CurrentPreset, CurrentPresetPath);
             }
             catch (Exception ex)
             {
@@ -429,7 +440,7 @@ namespace InsPres1
                 throw ex;
             }
         }
-        public static void Save(List<dataXML> dataList, string path) // сохраняет изменения в изначальный проект
+        public static void Save(List<dataXML> dataList, string path, string c) // сохраняет изменения в изначальный проект
         {
             try
             {
@@ -438,10 +449,10 @@ namespace InsPres1
                 {
                     if (!System.IO.File.Exists(path + "\\Resources\\" + data.FileName))
                     {
-                        System.IO.File.Copy(data.FilePath, path + "\\Resources\\" + data.FileName + System.IO.Path.GetExtension(data.FilePath));
-                        data.FilePath = path + "\\Resources\\" + data.FileName + System.IO.Path.GetExtension(data.FilePath);
-                        System.IO.File.Copy(data.FilePreview, path + "\\Previews\\" + data.FileName + System.IO.Path.GetExtension(data.FilePath) + ".jpg");
-                        data.FilePreview = path + "\\Previews\\" + data.FileName + System.IO.Path.GetExtension(data.FilePath) + ".jpg";
+                        System.IO.File.Copy(c + data.FilePath, path + "\\Resources\\" + data.FileName + System.IO.Path.GetExtension(data.FilePath));
+                        data.FilePath =   "\\Resources\\" + data.FileName + System.IO.Path.GetExtension(data.FilePath);
+                        System.IO.File.Copy(c + data.FilePreview, path + "\\Previews\\" + data.FileName + System.IO.Path.GetExtension(data.FilePath) + ".jpg");
+                        data.FilePreview =   "\\Previews\\" + data.FileName + System.IO.Path.GetExtension(data.FilePath) + ".jpg";
                     }
                 }
                 XmlSerializer formatter = new XmlSerializer(typeof(List<dataXML>));
@@ -456,11 +467,11 @@ namespace InsPres1
             }
         }
 
-        public static void SaveAs(List<dataXML> dataList) // сохраняет текущий проект в новую дирректорию
+        public static void SaveAs(List<dataXML> dataList, string currentPresetPath) // сохраняет текущий проект в новую дирректорию
         {
             try
             {
-                Preset.Save(dataList, Preset.CreateNew());
+                Preset.Save(dataList, Preset.CreateNew(), currentPresetPath);
             }
             catch (Exception ex)
             { throw ex; }

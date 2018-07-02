@@ -181,5 +181,3 @@ C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\obj\Debug\InsPres1.
 C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\obj\Debug\InsPres1.csproj.GenerateResource.Cache
 C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\obj\Debug\en\InsPres1.resources.dll
 C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\obj\Debug\ru-RU\InsPres1.resources.dll
-C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\obj\Debug\UserControl1.g.cs
-C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\obj\Debug\UserControl1.baml

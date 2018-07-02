@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/repeat_grey.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("readme.txt")]
 
 
