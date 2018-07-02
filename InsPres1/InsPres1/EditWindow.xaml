@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:InsPres1"
         xmlns:resx="clr-namespace:InsPres1.Properties"
         mc:Ignorable="d"
-        Title="{x:Static resx:Resources.EditWindowTitle}" Height="262.5" Width="515.333">
+        Title="{x:Static resx:Resources.EditWindowTitle}" Height="346.434" Width="575.404">
     <Grid Name="grid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="63*"/>

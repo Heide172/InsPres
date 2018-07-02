@@ -46,20 +46,19 @@
             Grid.Row="1"
             Source="C:\DefaultImage.jpg" 
             d:LayoutOverrides="TopMargin, BottomMargin"/>
+        <ToggleButton Style="{DynamicResource MetroCircleToggleButtonStyle}" Name="DeleteButton" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Right" Width="30" Click="DeleteButton_Click"  Grid.IsSharedSizeScope="False" Visibility="Hidden" RenderTransformOrigin="0.5,0.5"  Background="Transparent" BorderBrush="Transparent" BorderThickness="0.5,0.1,0,0.1" Grid.ColumnSpan="2" Margin="0,0,7,138" Grid.RowSpan="2">
 
-        <ToggleButton Style="{DynamicResource MetroCircleToggleButtonStyle}" Name="DeleteButton" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Right" Width="25" Click="DeleteButton_Click"  Grid.IsSharedSizeScope="False" Visibility="Visible" RenderTransformOrigin="0.5,0.5"  Background="White" BorderBrush="#FFC10808" BorderThickness="0.5,0.1,0,0.1" Grid.ColumnSpan="2" Margin="0,-3,7,123" Grid.RowSpan="2">
 
-
-            <Canvas Name="canvas" Height="30"  Width="30" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Canvas Name="canvas" Height="35"  Width="35" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <Path Stroke="Red" StrokeThickness="1" Height="8.981" Stretch="Fill" Width="8.98" Canvas.Left="11.02" Canvas.Top="11.019" RenderTransformOrigin="2.504,1.489">
                     <Path.Data>
                         <PathGeometry>
                             <PathGeometry.Figures>
                                 <PathFigure StartPoint="0,0">
-                                    <LineSegment Point="30,30"/>
+                                    <LineSegment Point="35,35"/>
                                 </PathFigure>
-                                <PathFigure StartPoint="0,30">
-                                    <LineSegment Point="30,0"/>
+                                <PathFigure StartPoint="0,35">
+                                    <LineSegment Point="35,0"/>
                                 </PathFigure>
                             </PathGeometry.Figures>
                         </PathGeometry>
