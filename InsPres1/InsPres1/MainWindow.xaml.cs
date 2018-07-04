@@ -144,23 +144,23 @@ namespace InsPres1
         {
             try
             {
-                string fullFilePath = CurrentPresetPath + "\\" + path;
+               // string fullFilePath = CurrentPresetPath + "\\" + path;
                 switch (fileType)
                 {
                     case dataXML._FileType.Video:
-                        VideoPlayer vp = new VideoPlayer(fileName, fullFilePath);
+                        VideoPlayer vp = new VideoPlayer(fileName, path);
                         vp.Show();
                         break;
                     case dataXML._FileType.Flash:
-                        FlashPlayer fp = new FlashPlayer(fileName, fullFilePath);
+                        FlashPlayer fp = new FlashPlayer(fileName, path);
                         fp.Show();
                         break;
                     case dataXML._FileType.Html:
-                        HTMLViewer hv = new HTMLViewer(fileName, fullFilePath);
+                        HTMLViewer hv = new HTMLViewer(fileName, path);
                         hv.Show();
                         break;
                     case dataXML._FileType.Image:
-                        ImageViewer iv = new ImageViewer(fileName, fullFilePath);
+                        ImageViewer iv = new ImageViewer(fileName, path);
                         iv.Show();
                         break;
                     case dataXML._FileType.Edit:
@@ -226,8 +226,8 @@ namespace InsPres1
                         foreach (dataXML data1 in CurrentPreset)
                         {
                             dataXML viewData = data1;
-                            viewData.FilePath = CurrentPresetPath + "\\" + viewData.FilePath;
-                            viewData.FilePreview = CurrentPresetPath + "\\" + viewData.FilePreview;
+                            viewData.FilePath = CurrentPresetPath  + viewData.FilePath;
+                            viewData.FilePreview = CurrentPresetPath  + viewData.FilePreview;
                             Panel1.Items.Add(CreateNewItemBox(data1));
                         }
                         object o = new object();
@@ -260,8 +260,8 @@ namespace InsPres1
                 viewData.FilePath = data1.FilePath;
                 viewData.FilePreview = data1.FilePreview;
                 viewData.FileType = data1.FileType;
-                viewData.FilePath = CurrentPresetPath + "\\" + viewData.FilePath;
-                viewData.FilePreview = CurrentPresetPath + "\\" + viewData.FilePreview;
+                viewData.FilePath = CurrentPresetPath  + viewData.FilePath;
+                viewData.FilePreview = CurrentPresetPath  + viewData.FilePreview;
                 Panel1.Items.Add(CreateNewItemBox(viewData));
             }
             object o = new object();
@@ -283,7 +283,14 @@ namespace InsPres1
         {
             itemBox item = new itemBox();
             item.Margin = new Thickness(0, 5, 0, 5);
-            item.itemLoad(data);
+            dataXML viewData = new dataXML();
+            viewData.FileName = data.FileName;
+            viewData.FilePath = data.FilePath;
+            viewData.FilePreview = data.FilePreview;
+            viewData.FileType = data.FileType;
+            viewData.FilePath = CurrentPresetPath + viewData.FilePath;
+            viewData.FilePreview = CurrentPresetPath +  viewData.FilePreview;
+            item.itemLoad(viewData);
             item.OnButtonClick += onItemClick;
             item.OnDeleteClick += onDeleteClick;
             item.OnEditItemClick += onEditClick;
