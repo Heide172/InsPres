@@ -14,15 +14,22 @@
             <ColumnDefinition Width="127"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="1.5*"/>
-            <RowDefinition Height="4*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.8*"/>
         </Grid.RowDefinitions>
-        <TextBox Grid.Row="0" Grid.Column="1" x:Name="name"    TextWrapping="Wrap" />
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="filePath" />
-        <Label Grid.Row="0" Grid.Column="0" x:Name="label" Content="{x:Static resx:Resources.NameTextBlockText}" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Label Grid.Row="1" Grid.Column="0" x:Name="label_Copy" Content="{x:Static resx:Resources.LocationTextBlockText}" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Button Grid.Row="2" Grid.Column="2" x:Name="button" Content="{x:Static resx:Resources.OkButtonText}" Click="button_Click" Width="60" Height="{Binding ElementName=button1, Path=ActualHeight}" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Normal" Margin="0,0,0,5"/>
-        <Button  Grid.Row="1" Grid.Column="2" x:Name="button1" Content="{x:Static resx:Resources.BrowseButtonText}" Click="button1_Click" Width="60" Height="26" Margin="22.166,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Normal"/>
+       
+            <TextBox Grid.Row="3" Grid.Column="1" x:Name="name"   BorderBrush="Black" BorderThickness="0" TextWrapping="Wrap" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}"  />
+
+        <TextBox Grid.Row="5" Grid.Column="1" x:Name="filePath" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" BorderBrush="Black" BorderThickness="0" MinLines="2" />
+        <Label Grid.Row="3" Grid.Column="0" x:Name="label" Content="{x:Static resx:Resources.NameTextBlockText}" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Label Grid.Row="5" Grid.Column="0" x:Name="label_Copy" Content="{x:Static resx:Resources.LocationTextBlockText}" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Button Grid.Row="7" Grid.Column="2" x:Name="button" Content="{x:Static resx:Resources.OkButtonText}" Click="button_Click" Width="60" Height="{Binding ElementName=button1, Path=ActualHeight}" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Normal" Margin="0,0,0,5"/>
+        <Button  Grid.Row="5" Grid.Column="2" x:Name="button1" Content="{x:Static resx:Resources.BrowseButtonText}" Click="button1_Click" Width="60" Height="26" Margin="22.166,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Normal"/>
     </Grid>
 </Window>

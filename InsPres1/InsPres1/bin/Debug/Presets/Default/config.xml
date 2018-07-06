@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
 <ArrayOfDataXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />  <dataXML>
-    <FileName>Ph</FileName>
-    <FilePath>C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\Presets\Default\Resources\Ph.jpg</FilePath>
-    <FilePreview>C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\Presets\Default\Previews\Ph.jpg.jpg</FilePreview>
+    <FileName>csde</FileName>
+    <FilePath>\Resources\csde.jpg</FilePath>
+    <FilePreview>\Previews\csde.jpg.jpg</FilePreview>
+    <FileType>Image</FileType>
+  </dataXML>
+</ArrayOfDataXML>21\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\Presets\Default\Previews\Ph.jpg.jpg</FilePreview>
     <FileType>Image</FileType>
   </dataXML>
   <dataXML>

@@ -6,7 +6,9 @@
              xmlns:local="clr-namespace:InsPres1"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid  >
-        <WrapPanel Name="panel"/>
+    <Grid >
+        
+            <WrapPanel Name="panel"/>
+        
     </Grid>
 </UserControl>

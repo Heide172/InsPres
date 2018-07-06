@@ -36,6 +36,13 @@ namespace InsPres1
             defaultPath = System.Windows.Forms.Application.StartupPath + "\\Presets\\Default"; // запись пути по умолчанию
             try// очистка папки по умолчанию
             {
+                
+                if (!Directory.Exists(defaultPath + "//Resources"))
+                    Directory.CreateDirectory(defaultPath + "//Resources");
+               
+                if (!Directory.Exists(defaultPath + "//Previews"))
+                    Directory.CreateDirectory(defaultPath + "//Previews");
+
                 DirectoryInfo dir1 = new DirectoryInfo(defaultPath + "//Resources");
                 foreach (FileInfo file in dir1.GetFiles())
                 {
@@ -255,14 +262,8 @@ namespace InsPres1
             Panel1.Items.Clear();
             foreach (dataXML data1 in CurrentPreset)
             {
-                dataXML viewData = new dataXML();
-                viewData.FileName = data1.FileName;
-                viewData.FilePath = data1.FilePath;
-                viewData.FilePreview = data1.FilePreview;
-                viewData.FileType = data1.FileType;
-                viewData.FilePath = CurrentPresetPath  + viewData.FilePath;
-                viewData.FilePreview = CurrentPresetPath  + viewData.FilePreview;
-                Panel1.Items.Add(CreateNewItemBox(viewData));
+               
+                Panel1.Items.Add(CreateNewItemBox(data1));
             }
             object o = new object();
             RoutedEventArgs e = new RoutedEventArgs();
@@ -365,7 +366,10 @@ namespace InsPres1
         {
             try
             {
-                Preset.Save(CurrentPreset, CurrentPresetPath, CurrentPresetPath);
+                if (CurrentPresetPath != defaultPath)
+                    Preset.Save(CurrentPreset, CurrentPresetPath, CurrentPresetPath);
+                else
+                    CurrentPresetPath = Preset.SaveAs(CurrentPreset, CurrentPresetPath);
             }
             catch (Exception ex)
             {
@@ -378,7 +382,8 @@ namespace InsPres1
         {
             try
             {
-                Preset.SaveAs(CurrentPreset, CurrentPresetPath);
+                
+                CurrentPresetPath = Preset.SaveAs(CurrentPreset, CurrentPresetPath);
             }
             catch (Exception ex)
             {
@@ -454,7 +459,7 @@ namespace InsPres1
                 
                 foreach (dataXML data in dataList)
                 {
-                    if (!System.IO.File.Exists(path + "\\Resources\\" + data.FileName))
+                    if (!System.IO.File.Exists(path + data.FilePath))
                     {
                         System.IO.File.Copy(c + data.FilePath, path + "\\Resources\\" + data.FileName + System.IO.Path.GetExtension(data.FilePath));
                         data.FilePath =   "\\Resources\\" + data.FileName + System.IO.Path.GetExtension(data.FilePath);
@@ -474,11 +479,13 @@ namespace InsPres1
             }
         }
 
-        public static void SaveAs(List<dataXML> dataList, string currentPresetPath) // сохраняет текущий проект в новую дирректорию
+        public static string SaveAs(List<dataXML> dataList, string currentPresetPath) // сохраняет текущий проект в новую дирректорию
         {
             try
             {
-                Preset.Save(dataList, Preset.CreateNew(), currentPresetPath);
+                string path = Preset.CreateNew();
+                Preset.Save(dataList, path , currentPresetPath);
+                return path;
             }
             catch (Exception ex)
             { throw ex; }

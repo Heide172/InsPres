@@ -115,8 +115,10 @@ namespace InsPres1
                 itemPreview1 = new itemPreview(op.FileName, getFileType(op.FileName));
                 
                 grid.Children.Add(itemPreview1);
+                itemPreview1.HorizontalContentAlignment = HorizontalAlignment.Center;
+                itemPreview1.HorizontalAlignment = HorizontalAlignment.Center;
                 Grid.SetColumn(itemPreview1, 1);
-                Grid.SetRow(itemPreview1, 2);
+                Grid.SetRow(itemPreview1, 1);
             }
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }
