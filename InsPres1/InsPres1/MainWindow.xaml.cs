@@ -31,6 +31,7 @@ namespace InsPres1
         string defaultPath; // путь пресета по умолчанию, для работы не создавая пресет
         string CurrentPresetPath; // путь рабочего пресета 
         toggleButton toggleButton1 = new toggleButton(); // кпнока для сворачивания
+        bool isEditing = false; // флаг режима редактирования
         public MainWindow()
         {
             defaultPath = System.Windows.Forms.Application.StartupPath + "\\Presets\\Default"; // запись пути по умолчанию
@@ -192,9 +193,11 @@ namespace InsPres1
                         {
                             Panel1.Items.Add(CreateNewItemBox(data1));
                         }
-                        object o = new object();
-                        RoutedEventArgs e = new RoutedEventArgs();
-                        MenuItem_Click_3(o, e);
+                        foreach (itemBox i in Panel1.Items)
+                        {
+                            i.editOn();
+                        }
+                        Panel1.Items.Add(CreateNewItemBox());
                         break;
                     }
                 }
@@ -237,9 +240,11 @@ namespace InsPres1
                             viewData.FilePreview = CurrentPresetPath  + viewData.FilePreview;
                             Panel1.Items.Add(CreateNewItemBox(data1));
                         }
-                        object o = new object();
-                        RoutedEventArgs e = new RoutedEventArgs();
-                        MenuItem_Click_3(o, e);
+                        foreach (itemBox i in Panel1.Items)
+                        {
+                            i.editOn();
+                        }
+                        Panel1.Items.Add(CreateNewItemBox());
                         break;
                     }
                 }
@@ -265,9 +270,11 @@ namespace InsPres1
                
                 Panel1.Items.Add(CreateNewItemBox(data1));
             }
-            object o = new object();
-            RoutedEventArgs e = new RoutedEventArgs();
-            MenuItem_Click_3(o, e);
+            foreach (itemBox i in Panel1.Items)
+            {
+                i.editOn();
+            }
+            Panel1.Items.Add(CreateNewItemBox());
 
         }
 
@@ -317,10 +324,60 @@ namespace InsPres1
         {
             try
             {
-                CurrentPresetPath = Preset.CreateNew();
-                object s = new object();
-                RoutedEventArgs rea = new RoutedEventArgs();
-                MenuItem_Click_3(s,rea);
+                if (CurrentPreset.Count != 0)
+                {
+
+                    ExitWindow ew = new ExitWindow();
+                    ew.ShowDialog();
+                    switch (ew.DialogResult)
+                    {
+                        case 0: // отмена
+                            return;
+                        case 1: // сохранить
+                            if (CurrentPresetPath == System.Windows.Forms.Application.StartupPath + "\\Presets\\Default")
+                            {
+                                Preset.SaveAs(CurrentPreset, CurrentPresetPath);
+                            }
+                            else
+                            {
+                                Preset.Save(CurrentPreset, CurrentPresetPath, CurrentPresetPath);
+                            }
+                            break;
+                        case 2: // закрыть
+
+                            CurrentPreset = new List<dataXML>();
+                            Panel1.Items.Clear();
+                            if (!Directory.Exists(defaultPath + "//Resources"))
+                                Directory.CreateDirectory(defaultPath + "//Resources");
+
+                            if (!Directory.Exists(defaultPath + "//Previews"))
+                                Directory.CreateDirectory(defaultPath + "//Previews");
+
+                            DirectoryInfo dir1 = new DirectoryInfo(defaultPath + "//Resources");
+                            foreach (FileInfo file in dir1.GetFiles())
+                            {
+                                file.Delete();
+                            }
+                            DirectoryInfo dir2 = new DirectoryInfo(defaultPath + "//Previews");
+                            foreach (FileInfo file in dir2.GetFiles())
+                            {
+                                file.Delete();
+                            }
+
+                            break;
+                    }
+                    Panel1.Items.Clear();
+                    CurrentPresetPath = defaultPath;
+                }
+
+            
+            
+
+
+                //CurrentPresetPath = Preset.CreateNew();
+                //object s = new object();
+                //RoutedEventArgs rea = new RoutedEventArgs();
+                //MenuItem_Click_3(s,rea);
             }
             catch (Exception ex)
             {
@@ -331,12 +388,25 @@ namespace InsPres1
 
         private void MenuItem_Click_3(object sender, RoutedEventArgs e)// включение режима редактирования
         {
-            foreach (itemBox i in Panel1.Items)
+            if (!isEditing) // если режим редактирования выключен - включить
             {
-                i.editOn();
+                foreach (itemBox i in Panel1.Items)
+                {
+                    i.editOn();
+                }
+                Panel1.Items.Add(CreateNewItemBox());
+              
+                isEditing = true;
             }
-            Panel1.Items.Add(CreateNewItemBox());
-            button.Visibility = Visibility.Visible;
+            else // -//-
+            {
+                Panel1.Items.Clear();
+                foreach (dataXML data1 in CurrentPreset)
+                {
+                    Panel1.Items.Add(CreateNewItemBox(data1));
+                }
+                isEditing = false;
+            }
         }
 
         private void MenuItem_Click_4(object sender, RoutedEventArgs e) // Открытие проекта
