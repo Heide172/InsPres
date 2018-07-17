@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 using MahApps.Metro.Controls;
 using System.IO;
 using System.Diagnostics;
-using JockerSoft.Media;
+
 using System.Reflection;
 using System.Xml.Serialization;
 namespace InsPres1

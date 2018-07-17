@@ -84,10 +84,6 @@
       <Project>{6d51b4dd-635a-47ac-97e7-280e57022584}</Project>
       <Name>InsPres1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Новая папка\FrameGrabber.csproj">
-      <Project>{751c741a-32da-4a8b-97fb-7afa290a6e91}</Project>
-      <Name>FrameGrabber</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

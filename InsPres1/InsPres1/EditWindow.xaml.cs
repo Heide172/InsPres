@@ -14,7 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 //using System.Windows.Forms;
-using JockerSoft.Media;
+
 
 using System.Runtime.InteropServices;
 using AxShockwaveFlashObjects;
@@ -94,7 +94,7 @@ namespace InsPres1
                     else
                         data.FilePreview = old.FilePreview;
                 }
-                else// не работает
+                else//
                 {
                     data.FilePreview = getPreview(data.FilePath, data.FileType);
                 }

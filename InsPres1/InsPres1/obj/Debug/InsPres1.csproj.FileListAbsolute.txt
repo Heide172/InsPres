@@ -126,13 +126,9 @@ C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\GongSolut
 C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\HtmlRenderer.dll
 C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\HtmlRenderer.WPF.dll
 C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\HtmlRendererCore.dll
-C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\JockerSoft.Media.dll
 C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\MahApps.Metro.dll
 C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\MahApps.Metro.IconPacks.dll
 C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\System.Windows.Interactivity.dll
-C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\Interop.DexterLib.dll
-C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\stdole.dll
-C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\JockerSoft.Media.pdb
 C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\ControlzEx.pdb
 C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\GongSolutions.Wpf.DragDrop.pdb
 C:\Users\TEMP.DEP8021\Source\Repos\InsPres\InsPres1\InsPres1\bin\Debug\GongSolutions.Wpf.DragDrop.xml

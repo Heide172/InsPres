@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Web;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -31,8 +32,8 @@ namespace InsPres1
         {
             InitializeComponent();
             HTMLViewerWindow.Title = fileName;
-           
-            WebBrowser.Navigate(filePath);
+            var url = System.Web.HttpUtility.UrlEncode(filePath);
+            WebBrowser.Navigate(url);
           
             
         }

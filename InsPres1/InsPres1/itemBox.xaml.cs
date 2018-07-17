@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using JockerSoft.Media;
+
 namespace InsPres1
 {
     /// <summary>
@@ -56,7 +56,7 @@ namespace InsPres1
                 {
 
                     ImageSourceConverter c = new ImageSourceConverter();
-                    i = previewAdd(i);
+                  
                     FIleImage.Source = (ImageSource)c.ConvertFromString(i.FilePreview);
                 }
                 else
@@ -102,66 +102,7 @@ namespace InsPres1
             OnDeleteClick(_item);
         }
         
-        private dataXML previewAdd(dataXML data)
-        {
-            dataXML d = data; 
-            switch (data.FileType)
-            {
-                case dataXML._FileType.Video:
-                    if (data.FilePreview != "")
-                    {
-                        d.FilePreview = data.FilePreview;
-                    }
-                    else
-                    {
-                        string prwPath = basePath + "Preview" + @"\" + d.FileName + "Preview.jpg";
-                        FrameGrabber.SaveFrameFromVideo(d.FilePath, 0.01d, prwPath);
-                        d.FilePreview = prwPath;
-                    }
-                  
-
-                    break;
-                case dataXML._FileType.Flash:
-                    if (data.FilePreview != "")
-                    {
-                        d.FilePreview = data.FilePreview;
-                    }
-                    else
-                    {
-                        string prwPath1 = basePath + "prw.jpg";
-                        d.FilePreview = prwPath1;
-                    }
-
-                   
-                    break;
-                case dataXML._FileType.Html:
-                    if (data.FilePreview != "")
-                    {
-                        d.FilePreview = data.FilePreview;
-                    }
-                    else
-                    {
-                        string prwPath2 = basePath + "prw.jpg";
-                        d.FilePreview = prwPath2;
-                    }
-
-                  
-                    break;
-                case dataXML._FileType.Image:
-                    if (data.FilePreview != "")
-                    {
-                        d.FilePreview = data.FilePreview;
-                    }
-                    else
-                    {
-                        string prwPath3 = basePath + d.FilePath;
-                        d.FilePreview = prwPath3;
-                    }
-      
-                    break;
-            }
-            return d;
-        }
+        
 
         private void UserControl_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
