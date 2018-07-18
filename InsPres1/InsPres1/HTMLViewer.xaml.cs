@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Web;
 using System.Windows.Controls;
+using System.Text.RegularExpressions;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -28,16 +29,35 @@ namespace InsPres1
      
 
        
-        public HTMLViewer(string fileName, string filePath)
+        public HTMLViewer(string fileName, string _filePath)
         {
             InitializeComponent();
             HTMLViewerWindow.Title = fileName;
-            var url = System.Web.HttpUtility.UrlEncode(filePath);
-            WebBrowser.Navigate(url);
+            string filePath = PathEncode(_filePath);
+            WebBrowser.Navigate(filePath);
           
             
         }
 
+        /// <summary>
+        /// Выявление кирилицы в пути и ее кодирование
+        /// </summary>
+        /// <param name="filePath"> Изначальный путь </param>
+        /// <returns> Путь с закодированой кирилицей</returns>
+        private string PathEncode(string filePath)
+        {
+            string encodedPath = filePath;
+            foreach (char _sym in encodedPath)
+            {
+                string sym = _sym.ToString();
+                if (Regex.IsMatch(sym.ToString(), "^[А-Яа-я]+$"))
+                {
+                    encodedPath = encodedPath.Replace(sym,
+                       System.Web.HttpUtility.UrlEncode(sym));
+                }
+            }
+            return encodedPath;
+        }
       
 
        
